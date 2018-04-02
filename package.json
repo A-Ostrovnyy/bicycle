@@ -1,0 +1,25 @@
+{
+  "name": "start_boilerplate",
+  "version": "1.0.0",
+  "description": "Start boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello World\" && exit 1"
+  },
+  "author": "A-Ostrovnyy",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.6.0"
+  }
+}
