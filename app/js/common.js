@@ -12,7 +12,7 @@ var slider = tns({
     autoplayButtonOutput:        false,
     autoplayResetOnVisibility:   false,
     controls:                    false,
-  });
+});
 
 var btn = document.querySelector('.js-btn');
 var menu = document.querySelector('.nav_wraper-mobile')
