@@ -3430,6 +3430,10 @@ time-stamp@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
 
+tiny-slider@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/tiny-slider/-/tiny-slider-2.6.0.tgz#3e80023ac3e615fa5cad0f1d06919f8d9bd3c1f8"
+
 to-array@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/to-array/-/to-array-0.1.4.tgz#17e6c11f73dd4f3d74cda7a4ff3238e9ad9bf890"
