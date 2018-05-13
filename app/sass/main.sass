@@ -14,7 +14,7 @@
     min-height: 50vw
     background-position: center center
     padding-top: 35px
-       
+
 .nav_wraper
     display: flex
     align-items: center
@@ -24,12 +24,19 @@
     display: none
     margin: 0 auto
 
+.menu 
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+
+
 
 .menu, .mobile_menu
     font-weight: bold
     color: #4d4959
     text-transform: uppercase
-    
+
     & a, .mobile_menu a
         text-decoration: none
         color: inherit
@@ -39,9 +46,8 @@
         &:hover
             text-decoration: underline
             color: $blue
-            transition: color .5s ease-in
+            transition: color .3s ease-in
             transition: text-decoration .5s ease-in
-
 
 .hamburger_wraper 
     cursor: pointer   
@@ -52,9 +58,6 @@
     margin-left: auto
     position: relative
     top: -100px
-
-
-    
 
 .hamburger_item, .hamburger_item::before, .hamburger_item::after
     display: block
@@ -93,11 +96,6 @@
     transform: rotate(-45deg)
     top: -3px
 
-
-    
-
-
-
 .mobile_menu
     text-align: center
     font-size: 20px
@@ -107,13 +105,19 @@
 
 .logo 
     height: 85px
-    width: 94px
 
+.logo > img 
+    display: block
+    width: 100%
+    height: auto
 
 .promo
     padding: 25px 20px
     text-align: center
     background-color: #f7f7f7
+
+.promo .image_bg
+    background-image: url(../img/chain.png)
 
 .head 
     color: $head
@@ -130,17 +134,31 @@
     margin-bottom: 50px
     text-align: justify
 
-
-
 .oliva, .boriosa, .hulot
     display: flex
     flex-direction: row
     width: 100%
 
-.image 
+.oliva .image_bg
+    background-image: url(../img/frame.png)
+.boriosa .image_bg
+    background-image: url(../img/wheel.png)
+.hulot .image_bg
+    background-image: url(../img/fork.png)
+
+.image
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
+
+.image_bg
+    background-repeat: no-repeat
+    background-position: center center
+
+.image_container
+    width: 55px
+    height: 45px
+    margin: 0 auto
 
 .image_wraper
     width: calc(100%*2/3)
@@ -172,9 +190,6 @@
     padding: 50px
     position: relative
 
-
-    
-
 .promo_img
     margin-bottom: 15px
     min-width: 0
@@ -195,8 +210,6 @@
     margin-left: -10px
     left: 50%
     z-index: 3
-    // background-color: pink
-
 
 .text p::after
     content: ''
@@ -216,18 +229,6 @@
 
 .hulot .image::after
     background-image: url(../img/hulot_logo.png)
-
-    
-
-
-
-
-
-
-
-
-
-
 
 .twitter 
     text-align: center
@@ -260,7 +261,7 @@
     flex-direction: row
     justify-content: space-between
     max-width: 80px
- 
+
 .slider_btn
     background-color: transparent 
     max-width: 10px
@@ -356,6 +357,11 @@
     border-color: $blue
     transition: color .4s ease-in
 
+.button:active,
+.button:focus
+    background-color: #fff
+    color: $grey
+
 .form
     padding: 110px 20px
     text-align: center
@@ -387,6 +393,13 @@
     background-color: $blue
     cursor: pointer
 
+    &:focus,
+    &:active, 
+    &:hover
+        color: $blue
+        background-color: #fff
+        border-color: $blue
+
 .footer
     background-color: #f7f7f7
     padding-top: 100px
@@ -400,11 +413,19 @@
     display: flex
     justify-content: space-between
 
-.addres
+.address
     color: $grey
     font-weight: bold
     font-size: 16px
     font-style: italic
+
+    & > address
+        display: flex
+        flex-direction: column
+
+        & a
+            color: inherit
+            text-decoration: none
 
 .city 
     text-transform: uppercase
@@ -414,7 +435,6 @@
     display: flex
     justify-content: space-between
     width: 135px
-
 
 .social a 
     display: block
@@ -435,6 +455,5 @@
     font-style: italic
     color: $grey
     margin-right: 10px
-    
 
 @import "media" // Всегда в конце
